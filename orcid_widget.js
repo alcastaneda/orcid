@@ -179,28 +179,24 @@
 		$('<p id="orcidAuthSuccess"><b>Thanks, ' +signedInIdToken.given_name+ " " +signedInIdToken.family_name+ '!</b><br><img src="https://orcid.org/sites/default/files/images/orcid_24x24.png"/><a target="_orcidRecord" href="' + issuer + '/my-orcid">' +  issuer + '/' + signedInIdToken.sub + '</a></p>').appendTo(elementId);
 		//Add hidden inputs with ORCID info
 		$('<input>').attr({
-		    // type: 'hidden',
         type: 'text',
 		    id: 'orcidId',
 		    name: 'orcidId',
 		    value: signedInIdToken.iss + "/" + signedInIdToken.sub
 		}).appendTo(elementId);
 		$('<input>').attr({
-		    // type: 'hidden',
         type: 'text',
 		    id: 'orcidGivenName',
 		    name: 'orcidGivenName',
 		    value: signedInIdToken.given_name
 		}).appendTo(elementId);
 		$('<input>').attr({
-		    // type: 'hidden',
         type: 'text',
 		    id: 'orcidFamilyName',
 		    name: 'orcidFamilyName',
 		    value: signedInIdToken.family_name
 		}).appendTo(elementId);
 		$('<input>').attr({
-		    // type: 'hidden',
         type: 'text',
 		    id: 'orcidIdToken',
 		    name: 'orcidIdToken',
@@ -208,7 +204,6 @@
 		}).appendTo(elementId);
 		if(state){
 			$('<input>').attr({
-			    // type: 'hidden',
           type: 'text',
 			    id: 'orcidState',
 			    name: 'orcidState',
