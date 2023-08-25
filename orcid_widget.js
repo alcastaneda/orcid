@@ -216,7 +216,7 @@
 		$.ajax({
 			url:submitUri,
 			type:'POST',
-			data: JSON.stringify({ "id_token": id_token, "state": state}),
+			data: JSON.stringify({ "id_token": id_token, "state": state, userInfo: signedInIdToken}),
 			contentType:'application/json; charset=utf-8'})
 			.done(function(){
 				showSuccess($, id_token, signedInIdToken);
