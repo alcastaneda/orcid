@@ -64,15 +64,15 @@
 			state = getQueryParameterByName("state");
 			submitUri = $(elementId).data("submituri");
 
-			if (env === 'production'){
+			// if (env === 'production'){
 				issuer = prodIssuer;
 				authUrl = prodUrl;
 				key = prodKey;
-			} else {
-				issuer = sandboxIssuer;
-				authUrl = sandboxUrl;
-				key = sandboxKey;
-			}
+			// } else {
+			// 	issuer = sandboxIssuer;
+			// 	authUrl = sandboxUrl;
+			// 	key = sandboxKey;
+			// }
 
 			if(size=='lg'){
 				$(elementId).addClass('large');
