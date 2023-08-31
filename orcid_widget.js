@@ -64,7 +64,6 @@
 			state = getQueryParameterByName("state");
 			submitUri = $(elementId).data("submituri");
 
-			// if (env === 'production'){
 				issuer = prodIssuer;
 				authUrl = prodUrl;
 				key = prodKey;
